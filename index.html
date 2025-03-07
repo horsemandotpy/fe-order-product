@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sushi Order</title>
+  <link href="style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- Need to apply good semantic rule, i18 hook and js render -->
+  <div class="container flex-center">
+
+    <div class="sushi-menu-container">
+      <div class="sushi-card">
+        <div class="top-part flex-col">
+          <div>
+            <div class="startus-bar flex-between">
+              <div class="clockblock">
+                <p>9:41</p>
+              </div>
+              <div class="phones-status flex-center">
+                <img src="assest/order-menu/Cellular Connection.png" alt="cellular_connection" />
+                <img src="assest/order-menu/Wifi.png" alt="wifi" />
+                <img src="assest/order-menu/Battery.png" alt="battery" />
+              </div>
+            </div>
+
+            <div class="shop-information">
+              <div class="shop-icon">
+                <img src="assest/order-menu/neww 1.png" alt="loken_icon" />
+              </div>
+
+              <div class="shop-info">
+                <div class="flex-col align-center">
+                  <p class="dark-bold">Shop Name</p>
+                  <p class="shop-adress">Shop adress</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-container">
+            <div class="order-container-background">
+              <div class="order-information-box">
+                <div class="order-infor flex-col text-center">
+                  <p class="order-label">Your order number</p>
+                  <p class="order-title">Sushi - #005</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-status-treeline">
+            <div>
+              <div class="order-status-timepoint">
+                <div class="order-status-time flex-col">
+                  <p class="timepoint-title dark-bold">14:45</p>
+                  <p class="timepoint-desc">Nov 20, 2024</p>
+                </div>
+                <div class="order-status-icons flex-col align-center">
+                  <div class="status-icon">
+                    <img src="assest/order-menu/Exclude.png" alt="checkmark_icon" />
+                  </div>
+
+                  <div class="progress-line"></div>
+                </div>
+                <div class="order-status-info">
+                  <p class="timepoint-title dark-bold">Order received</p>
+                  <p class="timepoint-desc">We have received your order.</p>
+                </div>
+              </div>
+
+              <div class="order-status-timepoint">
+                <div class="order-status-time flex-col">
+                  <p class="timepoint-title dark-bold">14:45</p>
+                  <p class="timepoint-desc">Nov 20, 2024</p>
+                </div>
+                <div class="order-status-icons flex-col align-center order-status-error">
+                  <div class="status-icon">
+                    <img src="assest/order-menu/errorMark.png" alt="error_icon" />
+                  </div>
+
+                  <div class="progress-line errors-line"></div>
+                </div>
+                <div class="order-status-info">
+                  <p class="timepoint-title dark-bold">
+                    All drivers are currently busy
+                  </p>
+                  <p class="timepoint-desc">
+                    We’re sorry, all our drivers are currently busy. The
+                    system could not find a suitable driver at this time.
+                  </p>
+                </div>
+              </div>
+
+              <div class="order-status-timepoint">
+                <div class="order-status-time flex-col">
+                  <p class="timepoint-title dark-bold">14:45</p>
+                  <p class="timepoint-desc">Nov 20, 2024</p>
+                </div>
+                <div class="order-status-icons flex-col align-center">
+                  <div class="status-icon">
+                    <img src="assest/order-menu/Exclude.png" alt="checkmark_icon" />
+                  </div>
+
+                  <div class="progress-line"></div>
+                </div>
+                <div class="order-status-info">
+                  <p class="timepoint-title dark-bold">
+                    Cancel Order & Refund
+                  </p>
+                  <p class="timepoint-desc">The order will be canceled.</p>
+                </div>
+              </div>
+
+              <div class="order-status-timepoint">
+                <div class="order-status-time flex-col">
+                  <p class="timepoint-title dark-bold">14:51</p>
+                  <p class="timepoint-desc">Nov 20, 2024</p>
+                </div>
+                <div class="order-status-icons flex-col align-center">
+                  <div class="status-icon">
+                    <img src="assest/order-menu/doneMark.png" alt="done-mark_icon" />
+                  </div>
+                </div>
+                <div class="order-status-info">
+                  <p class="timepoint-title dark-bold">Refund successful</p>
+                  <p class="timepoint-desc">Your money will be refunded in a couple of minutes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-part">
+
+          <div class="place-order-container flex-col">
+            <div class="place-order-message flex-col text-center">
+              <p class="dark-bold">Sorry, We Couldn’t Deliver</p>
+              <span>
+                We couldn’t find a driver this time. Please try ordering again
+                or choose Takeaway instead. Thank you for understanding!
+              </span>
+            </div>
+
+            <button class="place-order-button">Place new order </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card flex-col align-center">
+      <div class="main-content flex-col align-center">
+        <img class="front-image" src="assest/product_card/yohjishirt.png" alt="yohji-crew-shirt">
+        <img class="back-image" src="assest/product_card/yohjishirtback.png" alt="yohji-crew-shirt">
+      </div>
+
+      <div class="desc-content">
+        <p class="product-name">Yohji Yamamoto</p>
+        <p class="product-desc">crew-neck T-shirt</p>
+        <p class="product-price sale-text">$116</p>
+      </div>
+
+      <div class="button-content">
+        <button class="add-to-cart">Add to bag</button>
+      </div>
+
+    </div>
+
+  </div>
+  </div>
+</body>
+
+</html>
